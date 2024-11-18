@@ -22,7 +22,7 @@ spec:
   actions:
   - template:
       apiVersion: templates.krateo.io/v1alpha1
-      resource: form
+      resource: forms
       name: template-{{ .Release.Name }}-form
       namespace: {{ .Release.Namespace }}
   app:
