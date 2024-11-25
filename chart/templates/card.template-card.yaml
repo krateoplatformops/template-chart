@@ -25,6 +25,13 @@ spec:
       resource: forms
       name: template-{{ .Release.Name }}-form
       namespace: {{ .Release.Namespace }}
+      verb: POST
+  - template:
+      apiVersion: core.krateo.io/v1alpha1
+      resource: compositiondefinitions
+      name: {{ .Release.Name }}
+      namespace: {{ .Release.Namespace }}
+      verb: DELETE
   app:
     template:
     {{- with .Values.portal.card }}
