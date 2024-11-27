@@ -25,7 +25,7 @@ spec:
       resource: forms
       name: template-{{ .Release.Name }}-form
       namespace: {{ .Release.Namespace }}
-      verb: POST
+      verb: GET
   - template:
       apiVersion: core.krateo.io/v1alpha1
       resource: compositiondefinitions
