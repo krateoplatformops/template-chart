@@ -1,7 +1,7 @@
 apiVersion: krateo.io/v1alpha1
 kind: Patch
 metadata:
-  name: compositiondefinition-status-card-color
+  name: compositiondefinition-status-card-color-{{ .Release.Name }}-{{ .Release.Namespace }}
 spec:
   from:
     objectReference:
@@ -17,4 +17,4 @@ spec:
       name: template-{{ .Release.Name }}-card
       namespace: {{ .Release.Namespace }}
     fieldPath: spec.app.template.color
-    transform: ${ .conditions[] | select(.type == "Ready") | if .status == "False" then "yellow" elif .status == "True" then "red" else "grey" end }
+    transform: ${ .conditions[] | select(.type == "Ready") | if .status == "False" then "orange" elif .status == "True" then "green" else "grey" end }
