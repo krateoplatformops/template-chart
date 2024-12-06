@@ -17,4 +17,4 @@ spec:
       name: template-{{ .Release.Name }}-card
       namespace: {{ .Release.Namespace }}
     fieldPath: spec.app.template.status
-    transform: ${ .conditions[] | select(.type == "Ready") | "Ready: " + .status }
+    transform: ${ .conditions[] | select(.type == "Ready") | "Ready:" + .status }
