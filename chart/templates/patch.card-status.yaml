@@ -1,7 +1,7 @@
 apiVersion: krateo.io/v1alpha1
 kind: Patch
 metadata:
-  name: compositiondefinition-status-card-color-{{ .Release.Name }}-{{ .Release.Namespace }}
+  name: compositiondefinition-status-card-status-{{ .Release.Name }}-{{ .Release.Namespace }}
 spec:
   from:
     objectReference:
