@@ -28,3 +28,4 @@ portal:
     color: blue
     content: This is a card for FireworksApp template
     tags: "1.1.9"
+    status: ""
