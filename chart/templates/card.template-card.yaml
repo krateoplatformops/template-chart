@@ -38,3 +38,4 @@ spec:
       {{- toYaml . | nindent 6 }}
     {{- end }}
       tags: {{ .Release.Namespace }},{{ .Values.portal.card.tags }}
+      date: {{ now }}
