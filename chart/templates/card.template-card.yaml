@@ -6,6 +6,10 @@ metadata:
   namespace: {{ .Release.Namespace }}
 data:
   panel: "true"
+  drawer: "true"
+  form: "true"
+  showFormStructure: "true"
+  drawerSize: large
 ---
 apiVersion: templates.krateo.io/v1alpha1
 kind: Widget
