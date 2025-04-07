@@ -5,6 +5,10 @@ metadata:
   name: template-{{ .Release.Name }}-card
   namespace: {{ .Release.Namespace }}
 data:
+  drawer: "true"
+  form: "true"
+  showFormStructure: "true"
+  drawerSize: large
   panel: "true"
 ---
 apiVersion: templates.krateo.io/v1alpha1
